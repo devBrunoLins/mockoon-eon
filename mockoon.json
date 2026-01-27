@@ -22,10 +22,10 @@
           "statusCode": 200,
           "label": "Listagem de eventos",
           "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -51,10 +51,10 @@
           "statusCode": 200,
           "label": "Listagem de cooperativas (agências)",
           "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -80,10 +80,10 @@
           "statusCode": 200,
           "label": "Listagem de tipos de Eventos",
           "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -109,10 +109,10 @@
           "statusCode": 200,
           "label": "Listagem de Status do Evento",
           "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -138,10 +138,10 @@
           "statusCode": 200,
           "label": "Listagem de PA's",
           "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -167,10 +167,10 @@
           "statusCode": 200,
           "label": "Listagem de Participantes",
           "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -195,11 +195,11 @@
           "latency": 0,
           "statusCode": 200,
           "label": "Criar evento",
-          "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+           "headers": [
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -225,10 +225,10 @@
           "statusCode": 200,
           "label": "Buscar evento por ID",
           "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -253,11 +253,11 @@
           "latency": 0,
           "statusCode": 200,
           "label": "Retorna URL da transmissão",
-          "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+                    "headers": [
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -282,11 +282,11 @@
           "latency": 0,
           "statusCode": 200,
           "label": "Listagem de pergunta por Evento",
-          "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+                    "headers": [
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -311,11 +311,11 @@
           "latency": 0,
           "statusCode": 200,
           "label": "Listagem de Resultados de Evento",
-          "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+                    "headers": [
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -340,11 +340,11 @@
           "latency": 0,
           "statusCode": 200,
           "label": "Edição de perguntas",
-          "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+                    "headers": [
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -369,11 +369,11 @@
           "latency": 0,
           "statusCode": 200,
           "label": "Encerrar pergunta",
-          "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+                    "headers": [
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -398,11 +398,11 @@
           "latency": 0,
           "statusCode": 201,
           "label": "Criar nova pergunta",
-          "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+                    "headers": [
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -427,11 +427,11 @@
           "latency": 0,
           "statusCode": 200,
           "label": "Busca de respostas por evento",
-          "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+                    "headers": [
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -456,11 +456,11 @@
           "latency": 0,
           "statusCode": 200,
           "label": "Lista de participantes com resultados de votos",
-          "headers": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+                    "headers": [
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
           ],
           "filePath": "",
           "sendFileAsBody": false,
@@ -475,7 +475,12 @@
     }
   ],
   "rootChildren": [],
-  "headers": [],
+            "headers": [
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
+          ],
   "proxyReqHeaders": [],
   "proxyResHeaders": [],
   "variables": [],

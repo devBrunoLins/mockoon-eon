@@ -1,5 +1,5 @@
 {
-  "uuid": "87092f0c-1365-4593-9dba-02dd4b07e56d",
+  "uuid": "a1d13159-4fa4-446a-8604-a9272b86bec4",
   "name": "Eventos - EON",
   "endpointPrefix": "",
   "latency": 0,
@@ -10,45 +10,14 @@
   "https": false,
   "routes": [
     {
-      "uuid": "9e87d93f-00ed-4e1c-bd18-76184b95a04c",
+      "uuid": "e0d5b4a5-52e1-4727-b4d2-432ecfeccc02",
       "documentation": "Listagem de eventos",
       "method": "get",
       "endpoint": "eventos",
       "responses": [
         {
-          "uuid": "5ffdbb6a-0a65-4772-826f-638e3419d1c8",
-          "body": {
-            "pageNumber": 1,
-            "pageSize": 10,
-            "totalPages": 30,
-            "totalRecords": 300,
-            "data": [
-              {
-                "id": "00282",
-                "eventName": "Nome do Evento",
-                "eventType": 1,
-                "agency": "Agência 1",
-                "status": 4,
-                "date": "2021-01-01"
-              },
-              {
-                "id": "00283",
-                "eventName": "Nome do Evento",
-                "eventType": 0,
-                "agency": "Agência 2",
-                "status": 2,
-                "date": "2021-01-30"
-              },
-              {
-                "id": "00284",
-                "eventName": "Nome do Evento",
-                "eventType": 1,
-                "agency": "Agência 3",
-                "status": 2,
-                "date": "2021-02-20"
-              }
-            ]
-          },
+          "uuid": "40ebe4e3-e2e2-4fbc-ae98-5fd8fc8c97d4",
+          "body": "{\n    \"pageNumber\": 1,\n    \"pageSize\": 10,\n    \"totalPages\": 30,\n    \"totalRecords\": 300,\n    \"data\": [\n    {\n        \"id\": \"00282\",\n        \"eventName\": \"Nome do Evento\",\n        \"eventType\": 1,\n        \"agency\": \"Agência 1\",\n        \"status\": 4,\n        \"date\": \"2021-01-01\"\n    },\n    {\n        \"id\": \"00283\",\n        \"eventName\": \"Nome do Evento\",\n        \"eventType\": 0,\n        \"agency\": \"Agência 2\",\n        \"status\": 2,\n        \"date\": \"2021-01-30\"\n    },\n    {\n        \"id\": \"00284\",\n        \"eventName\": \"Nome do Evento\",\n        \"eventType\": 1,\n        \"agency\": \"Agência 3\",\n        \"status\": 2,\n        \"date\": \"2021-02-20\"\n    }\n    ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Listagem de eventos",
@@ -65,30 +34,19 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "b7ae1da0-f872-418f-9fe3-15110afde660",
+      "uuid": "950441be-53c3-47fc-9304-66fc08825e16",
       "documentation": "Listagem de cooperativas (agências)",
       "method": "get",
       "endpoint": "cooperativas",
       "responses": [
         {
-          "uuid": "15e8936a-fa87-424e-8d3c-e47ad84c17e4",
-          "body": [
-            {
-              "id": 1,
-              "nome": "CREDISIS SUPER NOME BEM GRANDE",
-              "sigla": "CREDISIS"
-            },
-            {
-              "id": 2,
-              "nome": "OUTRA COOPERADORATIVA",
-              "sigla": "OTA-COOP"
-            }
-          ],
+          "uuid": "e12fe10c-28f7-4cbd-98ad-b7c3eb047298",
+          "body": "[\n    {\n        \"id\": 1,\n        \"nome\": \"CREDISIS SUPER NOME BEM GRANDE\",\n        \"sigla\": \"CREDISIS\"\n    },\n    {\n        \"id\": 2,\n        \"nome\": \"OUTRA COOPERADORATIVA\",\n        \"sigla\": \"OTA-COOP\"\n    }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Listagem de cooperativas (agências)",
@@ -105,28 +63,19 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "b5c99ac6-bfde-4c51-bbf8-fba0b2f5c0b6",
+      "uuid": "e181c24b-ca21-4bc2-9bf7-c74672dd5f13",
       "documentation": "Listagem de tipos de Eventos",
       "method": "get",
       "endpoint": "type-events",
       "responses": [
         {
-          "uuid": "64707040-4dea-4c9a-a686-e19051248ef2",
-          "body": [
-            {
-              "value": 0,
-              "label": "Pré Assembléia"
-            },
-            {
-              "value": 1,
-              "label": "Assembléia"
-            }
-          ],
+          "uuid": "af58fdd2-5bda-4192-bcb3-be5c39061306",
+          "body": "[\n    {\n        \"value\": 0,\n        \"label\": \"Pré Assembléia\"\n    },\n    {\n        \"value\": 1,\n        \"label\": \"Assembléia\"\n    }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Listagem de tipos de Eventos",
@@ -143,40 +92,19 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "d50600f4-4eb6-4870-81d7-2e668017ba39",
+      "uuid": "aec761bf-b5b7-4910-9254-47bd6e40419d",
       "documentation": "Listagem de Status do Evento",
       "method": "get",
       "endpoint": "status",
       "responses": [
         {
-          "uuid": "02fb1086-274b-420d-9464-3be84627a314",
-          "body": [
-            {
-              "value": 0,
-              "label": "Criado"
-            },
-            {
-              "value": 1,
-              "label": "Publicado"
-            },
-            {
-              "value": 2,
-              "label": "Encerrado"
-            },
-            {
-              "value": 3,
-              "label": "Inativo"
-            },
-            {
-              "value": 4,
-              "label": "Em edição"
-            }
-          ],
+          "uuid": "b561db82-0df5-4eea-9b7a-a54f6b937f41",
+          "body": "[\n    {\n        \"value\": 0,\n        \"label\": \"Criado\"\n    },\n    {\n        \"value\": 1,\n        \"label\": \"Publicado\"\n    },\n    {\n        \"value\": 2,\n        \"label\": \"Encerrado\"\n    },\n    {\n        \"value\": 3,\n        \"label\": \"Inativo\"\n    },\n    {\n        \"value\": 4,\n        \"label\": \"Em edição\"\n    }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Listagem de Status do Evento",
@@ -193,32 +121,19 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "d19e9462-477b-45e6-b1aa-32a2c1bd5253",
+      "uuid": "4e422720-67c3-48d5-aec7-68775efbe29b",
       "documentation": "Listagem de PA's",
       "method": "get",
       "endpoint": "pas",
       "responses": [
         {
-          "uuid": "8ceefe57-c519-4442-b81a-a2d623a0647d",
-          "body": [
-            {
-              "value": 1,
-              "label": "PA 1"
-            },
-            {
-              "value": 2,
-              "label": "PA 2"
-            },
-            {
-              "value": 3,
-              "label": "PA 3"
-            }
-          ],
+          "uuid": "99305f76-6b9d-4b89-9a59-fedf120950ad",
+          "body": "[\n  {\n    \"value\": 1,\n    \"label\": \"PA 1\"\n  },\n  {\n    \"value\": 2,\n    \"label\": \"PA 2\"\n  },\n  {\n    \"value\": 3,\n    \"label\": \"PA 3\"\n  }\n]\n",
           "latency": 0,
           "statusCode": 200,
           "label": "Listagem de PA's",
@@ -235,36 +150,19 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "93b01f3f-7352-4936-916b-9a21422cc821",
+      "uuid": "20220467-9ca2-41e7-94cf-bfb6a552065f",
       "documentation": "Listagem de Participantes",
       "method": "get",
       "endpoint": "participantes",
       "responses": [
         {
-          "uuid": "ab11823b-505f-4ad4-b04a-d5dbdb42c984",
-          "body": [
-            {
-              "value": 1,
-              "label": "Bruno"
-            },
-            {
-              "value": 2,
-              "label": "Nelson"
-            },
-            {
-              "value": 3,
-              "label": "Tezuka"
-            },
-            {
-              "value": 4,
-              "label": "Mooses"
-            }
-          ],
+          "uuid": "b2ecba03-a06a-4d97-873e-acc17d412657",
+          "body": "[\n  {\n    \"value\": 1,\n    \"label\": \"Bruno\"\n  },\n  {\n    \"value\": 2,\n    \"label\": \"Nelson\"\n  },\n  {\n    \"value\": 3,\n    \"label\": \"Tezuka\"\n  },\n  {\n    \"value\": 4,\n    \"label\": \"Mooses\"\n  }\n]\n",
           "latency": 0,
           "statusCode": 200,
           "label": "Listagem de Participantes",
@@ -281,34 +179,19 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "b5783c7a-2ee7-4113-9d37-951de72854ab",
+      "uuid": "3062f7fa-ef87-4c97-bd08-623f945aba08",
       "documentation": "Criar evento",
       "method": "post",
       "endpoint": "eventos",
       "responses": [
         {
-          "uuid": "55507c74-d5ff-47af-9e78-b263032036b7",
-          "body": {
-            "id": 1,
-            "nome": "Evento 123",
-            "tipo": 1,
-            "cooperativaId": 1,
-            "data": "2026-01-23",
-            "horario": "23:20",
-            "linkEvento": "https://linkedin.com",
-            "chatPrivadoCooperado": true,
-            "infoEvento": "<h3>Info evento</h3>",
-            "pas": [
-              1,
-              2,
-              3
-            ]
-          },
+          "uuid": "37bfc6f3-7118-43a0-96c9-d95978d59918",
+          "body": "{\n    \"id\": 1,\n    \"nome\": \"Evento 123\",\n    \"tipo\": 1,\n    \"cooperativaId\": 1,\n    \"data\": \"2026-01-23\",\n    \"horario\": \"23:20\",\n    \"linkEvento\": \"https://linkedin.com\",\n    \"chatPrivadoCooperado\": true,\n    \"infoEvento\": \"<h3>Info evento</h3>\",\n    \"pas\": [\n        1,\n        2,\n        3\n    ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Criar evento",
@@ -325,34 +208,19 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "57239646-8e5c-4a65-8e1b-8d9f3acbeb71",
+      "uuid": "9c2e6e3e-ed64-4132-b016-b9765ffea268",
       "documentation": "Buscar evento por ID",
       "method": "get",
       "endpoint": "eventos/00282",
       "responses": [
         {
-          "uuid": "6befdb48-231e-4c8e-b905-eb611dfc71ee",
-          "body": {
-            "id": 282,
-            "nome": "Evento 00282",
-            "tipo": 1,
-            "cooperativaId": 1,
-            "data": "2026-01-23",
-            "horario": "23:20",
-            "linkEvento": "https://linkedin.com",
-            "chatPrivadoCooperado": true,
-            "infoEvento": "<span>Info evento</span",
-            "pas": [
-              1,
-              2,
-              3
-            ]
-          },
+          "uuid": "77d9bbfe-84eb-44d8-989b-ba7beca7f6e9",
+          "body": "{\n    \"id\": 282,\n    \"nome\": \"Evento 00282\",\n    \"tipo\": 1,\n    \"cooperativaId\": 1,\n    \"data\": \"2026-01-23\",\n    \"horario\": \"23:20\",\n    \"linkEvento\": \"https://linkedin.com\",\n    \"chatPrivadoCooperado\": true,\n    \"infoEvento\": \"<span>Info evento</span\",\n    \"pas\": [\n        1,\n        2,\n        3\n    ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Buscar evento por ID",
@@ -369,21 +237,19 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "dd1416cd-ec5d-4fab-ba95-03507003fcc6",
+      "uuid": "676a1142-53f2-4abe-8579-58d18411b007",
       "documentation": "Retorna URL da transmissão",
       "method": "get",
       "endpoint": "live",
       "responses": [
         {
-          "uuid": "d9418b97-ade2-4887-a267-6b6a8cc3c2c0",
-          "body": {
-            "liveUrl": "https://www.youtube.com/embed/IxBaz_ezYd4?si=R6eun3hVhu_FCt5g"
-          },
+          "uuid": "93546434-922a-4e76-8216-d6b1bf981b14",
+          "body": "{\n  \"liveUrl\": \"https://www.youtube.com/embed/IxBaz_ezYd4?si=R6eun3hVhu_FCt5g\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Retorna URL da transmissão",
@@ -400,50 +266,19 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "5f92cf65-a9f5-4834-8097-6c3a72840929",
+      "uuid": "f605b18e-0faa-4eb1-a261-1cf9185259ea",
       "documentation": "Listagem de pergunta por Evento",
       "method": "get",
       "endpoint": "perguntas",
       "responses": [
         {
-          "uuid": "dd19b0eb-95b3-4b24-bc77-efe17aa855fe",
-          "body": [
-            {
-              "id": 1,
-              "eventoId": 1,
-              "titulo": "Primeira pergunta",
-              "status": "finalizada"
-            },
-            {
-              "id": 2,
-              "eventoId": 1,
-              "titulo": "Segunda pergunta",
-              "status": "finalizada"
-            },
-            {
-              "id": 3,
-              "eventoId": 1,
-              "titulo": "Terceira pergunta",
-              "status": "criada"
-            },
-            {
-              "id": 4,
-              "eventoId": 1,
-              "titulo": "Quarta pergunta",
-              "status": "criada"
-            },
-            {
-              "id": 5,
-              "eventoId": 1,
-              "titulo": "Quinta pergunta",
-              "status": "ativa"
-            }
-          ],
+          "uuid": "a985bca1-191f-403e-bd28-e79ebb6cface",
+          "body": "[\n  {\n    \"id\": 1,\n    \"eventoId\": 1,\n    \"titulo\": \"Primeira pergunta\",\n    \"status\": \"finalizada\"\n  },\n  {\n    \"id\": 2,\n    \"eventoId\": 1,\n    \"titulo\": \"Segunda pergunta\",\n    \"status\": \"finalizada\"\n  },\n  {\n    \"id\": 3,\n    \"eventoId\": 1,\n    \"titulo\": \"Terceira pergunta\",\n    \"status\": \"criada\"\n  },\n  {\n    \"id\": 4,\n    \"eventoId\": 1,\n    \"titulo\": \"Quarta pergunta\",\n    \"status\": \"criada\"\n  },\n  {\n    \"id\": 5,\n    \"eventoId\": 1,\n    \"titulo\": \"Quinta pergunta\",\n    \"status\": \"ativa\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Listagem de pergunta por Evento",
@@ -460,38 +295,19 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "42fb04d7-d298-478f-8e6a-dd717ce1b1bd",
+      "uuid": "d2014376-f38e-4cdd-a8d7-4f4f45a6d138",
       "documentation": "Listagem de Resultados de Evento",
       "method": "get",
       "endpoint": "relatorios/eventos/resultados",
       "responses": [
         {
-          "uuid": "61cd78e7-36d1-4ab0-9e95-7731673da319",
-          "body": [
-            {
-              "idPergunta": 1,
-              "tituloPergunta": "O cooperado é a favor da aprovação do Relatório de Gestão e das Demonstrações Financeiras referentes ao exercício de 2024, conforme parecer favorável do Conselho Fiscal?",
-              "resultado": {
-                "sim": 92,
-                "nao": 5,
-                "abstencoes": 3
-              }
-            },
-            {
-              "idPergunta": 2,
-              "tituloPergunta": "O cooperado aprova a proposta de destinação das Sobras Líquidas, alocando 75% para o Fundo de Reserva e 25% para distribuição proporcional aos associados?",
-              "resultado": {
-                "sim": 85,
-                "nao": 11,
-                "abstencoes": 1
-              }
-            }
-          ],
+          "uuid": "a8f7ac5d-95f9-4e71-8a39-a62d8237ecb0",
+          "body": "[\n    {\n        \"idPergunta\": 1,\n        \"tituloPergunta\": \"O cooperado é a favor da aprovação do Relatório de Gestão e das Demonstrações Financeiras referentes ao exercício de 2024, conforme parecer favorável do Conselho Fiscal?\",\n        \"resultado\": {\n            \"sim\": 92,\n            \"nao\": 5,\n            \"abstencoes\": 3\n        }\n    },\n    {\n        \"idPergunta\": 2,\n        \"tituloPergunta\": \"O cooperado aprova a proposta de destinação das Sobras Líquidas, alocando 75% para o Fundo de Reserva e 25% para distribuição proporcional aos associados?\",\n        \"resultado\": {\n            \"sim\": 85,\n            \"nao\": 11,\n            \"abstencoes\": 1\n        }\n    }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Listagem de Resultados de Evento",
@@ -508,36 +324,19 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "ba44847c-46b3-4206-867b-38e124ccc48d",
+      "uuid": "772edaa3-c897-4c39-ac64-b4a10212758a",
       "documentation": "Edição de perguntas",
       "method": "put",
       "endpoint": "perguntas/1",
       "responses": [
         {
-          "uuid": "d74eeb0e-bdbd-4dc2-91f6-2a895c052ed4",
-          "body": {
-            "idPergunta": "1",
-            "tituloPergunta": "Pergunta de teste",
-            "possuiOpcoesPersonalizadas": true,
-            "possuiConflitoInteresse": true,
-            "conflitoInteresse": [
-              "1",
-              "2",
-              "4",
-              "5"
-            ],
-            "opcoesPersonalizadas": [
-              "a",
-              "b",
-              "c"
-            ],
-            "tempoResposta": 120000
-          },
+          "uuid": "dc4a1efa-cc80-454a-a243-a7faef3c3640",
+          "body": "{\n  \"idPergunta\": \"1\",\n  \"tituloPergunta\": \"Pergunta de teste\",\n  \"possuiOpcoesPersonalizadas\": true,\n  \"possuiConflitoInteresse\": true,\n  \"conflitoInteresse\": [\"1\", \"2\", \"4\", \"5\"],\n  \"opcoesPersonalizadas\": [\"a\", \"b\", \"c\"],\n  \"tempoResposta\": 120000\n}\n",
           "latency": 0,
           "statusCode": 200,
           "label": "Edição de perguntas",
@@ -554,18 +353,18 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "76e10e91-7a38-4dd2-9241-0b53314a9994",
+      "uuid": "686eb9a5-10fa-49d6-88d2-d0c2966c808e",
       "documentation": "Encerrar pergunta",
       "method": "post",
       "endpoint": "perguntas/:id/encerrar",
       "responses": [
         {
-          "uuid": "49a99abe-646a-4144-8851-138f17614335",
+          "uuid": "25bbe48b-4ba0-4d73-8221-90419dab4157",
           "body": "",
           "latency": 0,
           "statusCode": 200,
@@ -583,18 +382,18 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "ff578e66-da8e-4cb8-88d3-8b7ab8c4b9c8",
+      "uuid": "8e1cbc95-b45f-48c8-b516-2eede6d9b0d8",
       "documentation": "Criar nova pergunta",
       "method": "post",
       "endpoint": "perguntas",
       "responses": [
         {
-          "uuid": "94745c69-9fdc-47db-bb68-0afecff72bfa",
+          "uuid": "ee04c579-e006-41fe-8742-fe3cef459edd",
           "body": "",
           "latency": 0,
           "statusCode": 201,
@@ -612,36 +411,19 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "932cb92c-0d3c-4e20-beb1-2d2e337747e0",
+      "uuid": "bc3d5b9b-0977-4aba-91e6-48aee76f3b78",
       "documentation": "Busca de respostas por evento",
       "method": "get",
       "endpoint": "relatorio/resposta/:idEvento",
       "responses": [
         {
-          "uuid": "33c021cd-97d6-473c-b138-4d301e6706a6",
-          "body": [
-            {
-              "id": 1,
-              "titulo": "Primeira pergunta",
-              "sim": 2,
-              "nao": 2,
-              "abstencoes": 0,
-              "naoParticipou": 1
-            },
-            {
-              "id": 2,
-              "titulo": "Segunda pergunta",
-              "sim": 1,
-              "nao": 2,
-              "abstencoes": 3,
-              "naoParticipou": 1
-            }
-          ],
+          "uuid": "21c3cf41-a918-424a-ad84-71ab856582bb",
+          "body": "[\n    {\n        \"id\": 1,\n        \"titulo\": \"Primeira pergunta\",\n        \"sim\": 2,\n        \"nao\": 2,\n        \"abstencoes\": 0,\n        \"naoParticipou\": 1\n    },\n    {\n        \"id\": 2,\n        \"titulo\": \"Segunda pergunta\",\n        \"sim\": 1,\n        \"nao\": 2,\n        \"abstencoes\": 3,\n        \"naoParticipou\": 1\n    }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Busca de respostas por evento",
@@ -658,64 +440,19 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     },
     {
-      "uuid": "0e55383c-c070-40cf-95ae-9dc3104c6067",
+      "uuid": "7a35e5e0-15f9-435e-8398-3e211e0d17d5",
       "documentation": "Lista de participantes com resultados de votos",
       "method": "get",
       "endpoint": "relatorio/evento/:idEvento/pergunta/:idPergunta",
       "responses": [
         {
-          "uuid": "a2abbe11-9383-44cf-b63a-58e1ec251310",
-          "body": [
-            {
-              "id": "00001",
-              "matricula": "10841",
-              "agencia": "0002",
-              "pa": "0012",
-              "conta": "0302175-0",
-              "nome": "SABRINA ALMADA DA COSTA",
-              "participou": "Sim",
-              "opcaoSelecionada": "Sim",
-              "dataHora": "25/10/2025 16:00:50"
-            },
-            {
-              "id": "00002",
-              "matricula": "10551",
-              "agencia": "0002",
-              "pa": "0004",
-              "conta": "0302264-0",
-              "nome": "JEFFERSON GARIBALDI FREITAS",
-              "participou": "Sim",
-              "opcaoSelecionada": "Não",
-              "dataHora": "25/10/2025 16:00:50"
-            },
-            {
-              "id": "00003",
-              "matricula": "1051",
-              "agencia": "0002",
-              "pa": "0004",
-              "conta": "0302264-0",
-              "nome": "MARIA TEJO",
-              "participou": "Sim",
-              "opcaoSelecionada": "Não",
-              "dataHora": "25/10/2025 16:00:50"
-            },
-            {
-              "id": "00004",
-              "matricula": "10595",
-              "agencia": "0002",
-              "pa": "0004",
-              "conta": "0302264-0",
-              "nome": "JOAQUIM FREITAS",
-              "participou": "Sim",
-              "opcaoSelecionada": "Não",
-              "dataHora": "25/10/2025 16:00:50"
-            }
-          ],
+          "uuid": "9c275cf3-b5f6-4ffd-a9e7-c090f842d12f",
+          "body": "[\n    {\n        \"id\": \"00001\",\n        \"matricula\": \"10841\",\n        \"agencia\": \"0002\",\n        \"pa\": \"0012\",\n        \"conta\": \"0302175-0\",\n        \"nome\": \"SABRINA ALMADA DA COSTA\",\n        \"participou\": \"Sim\",\n        \"opcaoSelecionada\": \"Sim\",\n        \"dataHora\": \"25/10/2025 16:00:50\"\n    },\n    {\n        \"id\": \"00002\",\n        \"matricula\": \"10551\",\n        \"agencia\": \"0002\",\n        \"pa\": \"0004\",\n        \"conta\": \"0302264-0\",\n        \"nome\": \"JEFFERSON GARIBALDI FREITAS\",\n        \"participou\": \"Sim\",\n        \"opcaoSelecionada\": \"Não\",\n        \"dataHora\": \"25/10/2025 16:00:50\"\n    },\n    {\n        \"id\": \"00003\",\n        \"matricula\": \"1051\",\n        \"agencia\": \"0002\",\n        \"pa\": \"0004\",\n        \"conta\": \"0302264-0\",\n        \"nome\": \"MARIA TEJO\",\n        \"participou\": \"Sim\",\n        \"opcaoSelecionada\": \"Não\",\n        \"dataHora\": \"25/10/2025 16:00:50\"\n    },\n    {\n        \"id\": \"00004\",\n        \"matricula\": \"10595\",\n        \"agencia\": \"0002\",\n        \"pa\": \"0004\",\n        \"conta\": \"0302264-0\",\n        \"nome\": \"JOAQUIM FREITAS\",\n        \"participou\": \"Sim\",\n        \"opcaoSelecionada\": \"Não\",\n        \"dataHora\": \"25/10/2025 16:00:50\"\n    }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Lista de participantes com resultados de votos",
@@ -732,7 +469,7 @@
         }
       ],
       "enabled": true,
-      "responseMode": "SEQUENTIAL",
+      "responseMode": "DEFAULT",
       "type": "http",
       "middlewares": []
     }

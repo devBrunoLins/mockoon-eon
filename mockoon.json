@@ -17,7 +17,7 @@
       "responses": [
         {
           "uuid": "40ebe4e3-e2e2-4fbc-ae98-5fd8fc8c97d4",
-          "body": "{\n    \"pageNumber\": 1,\n    \"pageSize\": 10,\n    \"totalPages\": 30,\n    \"totalRecords\": 300,\n    \"data\": [\n    {\n        \"id\": \"00282\",\n        \"eventName\": \"Nome do Evento\",\n        \"eventType\": 1,\n        \"agency\": \"Agência 1\",\n        \"status\": 4,\n        \"date\": \"2021-01-01\"\n    },\n    {\n        \"id\": \"00283\",\n        \"eventName\": \"Nome do Evento\",\n        \"eventType\": 0,\n        \"agency\": \"Agência 2\",\n        \"status\": 2,\n        \"date\": \"2021-01-30\"\n    },\n    {\n        \"id\": \"00284\",\n        \"eventName\": \"Nome do Evento\",\n        \"eventType\": 1,\n        \"agency\": \"Agência 3\",\n        \"status\": 2,\n        \"date\": \"2021-02-20\"\n    }\n    ]\n}",
+          "body": "{\n  \"eventos\": {\n    \"pageNumber\": 1,\n    \"pageSize\": 10,\n    \"totalPages\": 30,\n    \"totalRecords\": 300,\n    \"data\": [\n      {\n        \"id\": \"00282\",\n        \"eventName\": \"Nome do Evento\",\n        \"eventType\": 1,\n        \"agency\": \"Agência 1\",\n        \"status\": 4,\n        \"date\": \"2021-01-01\"\n      },\n      {\n        \"id\": \"00283\",\n        \"eventName\": \"Nome do Evento\",\n        \"eventType\": 0,\n        \"agency\": \"Agência 2\",\n        \"status\": 2,\n        \"date\": \"2021-01-30\"\n      },\n      {\n        \"id\": \"00284\",\n        \"eventName\": \"Nome do Evento\",\n        \"eventType\": 1,\n        \"agency\": \"Agência 3\",\n        \"status\": 2,\n        \"date\": \"2021-02-20\"\n      }\n    ]\n  }\n}"
           "latency": 0,
           "statusCode": 200,
           "label": "Listagem de eventos",

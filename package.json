@@ -1,0 +1,11 @@
+{
+    "name": "api-mock",
+    "private": true,
+    "scripts": {
+      "start": "mockoon-cli start --data ./mockoon.json --port $PORT"
+    },
+    "dependencies": {
+      "@mockoon/cli": "^8.0.0"
+    }
+  }
+  

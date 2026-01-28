@@ -71,7 +71,7 @@
       "uuid": "e181c24b-ca21-4bc2-9bf7-c74672dd5f13",
       "documentation": "Listagem de tipos de Eventos",
       "method": "get",
-      "endpoint": "type-events",
+      "endpoint": "tipos-eventos",
       "responses": [
         {
           "uuid": "af58fdd2-5bda-4192-bcb3-be5c39061306",
@@ -133,7 +133,7 @@
       "responses": [
         {
           "uuid": "99305f76-6b9d-4b89-9a59-fedf120950ad",
-          "body": "[\n  {\n    \"value\": 1,\n    \"label\": \"PA 1\"\n  },\n  {\n    \"value\": 2,\n    \"label\": \"PA 2\"\n  },\n  {\n    \"value\": 3,\n    \"label\": \"PA 3\"\n  }\n]\n",
+          "body": "{\n  \"pas\": [\n    {\n      \"id\": 2,\n      \"sigla\": \"CENTRAL MATRIZ\",\n      \"codigo\": \"000\"\n    },\n    {\n      \"id\": 3,\n      \"sigla\": \"CREDISIS CENTRAL\",\n      \"codigo\": \"001\"\n    },\n    {\n      \"id\": 4,\n      \"sigla\": \"CREDISIS CENTRAL-REGIONAL SUL\",\n      \"codigo\": \"002\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Listagem de PA's",

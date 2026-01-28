@@ -216,11 +216,11 @@
       "uuid": "9c2e6e3e-ed64-4132-b016-b9765ffea268",
       "documentation": "Buscar evento por ID",
       "method": "get",
-      "endpoint": "eventos/00282",
+      "endpoint": "eventos/1/detalhes",
       "responses": [
         {
           "uuid": "77d9bbfe-84eb-44d8-989b-ba7beca7f6e9",
-          "body": "{\n    \"id\": 282,\n    \"nome\": \"Evento 00282\",\n    \"tipo\": 1,\n    \"cooperativaId\": 1,\n    \"data\": \"2026-01-23\",\n    \"horario\": \"23:20\",\n    \"linkEvento\": \"https://linkedin.com\",\n    \"chatPrivadoCooperado\": true,\n    \"infoEvento\": \"<span>Info evento</span\",\n    \"pas\": [\n        1,\n        2,\n        3\n    ]\n}",
+          "body": "{\n  \"evento\": {\n    \"id\": 0,\n    \"nome\": \"string\",\n    \"tipo\": 0,\n    \"data\": \"string\",\n    \"horario\": \"string\",\n    \"status\": 0,\n    \"linkEvento\": \"string\",\n    \"chatPrivadoCooperado\": true,\n    \"infoEvento\": \"string\",\n    \"cooperativaId\": 0,\n    \"cooperativaSigla\": \"string\",\n    \"cooperativaCodigo\": \"string\",\n    \"pas\": [\n      {\n        \"id\": 0,\n        \"sigla\": \"string\",\n        \"codigo\": \"string\"\n      }\n    ]\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Buscar evento por ID",

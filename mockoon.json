@@ -155,18 +155,76 @@
       "middlewares": []
     },
     {
-      "uuid": "20220467-9ca2-41e7-94cf-bfb6a552065f",
-      "documentation": "Listagem de Participantes",
-      "method": "get",
-      "endpoint": "eon/participantes",
+        "uuid": "20220467-9ca2-41e7-94cf-bfb6a552065f",
+        "documentation": "Listagem de Participantes",
+        "method": "get",
+        "endpoint": "eon/participantes",
+        "responses": [
+          {
+            "uuid": "b2ecba03-a06a-4d97-873e-acc17d412657",
+            "body": "{\n  \"participantes\": {\n    \"pageNumber\": 1,\n    \"pageSize\": 10,\n    \"totalPages\": 10,\n    \"totalRecords\": 100,\n    \"data\": [\n      {\n        \"id\": 1,\n        \"name\": \"Nome do participante\",\n        \"agencia\": \"0001\",\n        \"conta\": \"0001234567890\",\n        \"tipoParticipante\": 1\n      },\n      {\n        \"id\": 2,\n        \"name\": \"Nome do participante 2\",\n        \"agencia\": \"0002\",\n        \"conta\": \"0001234567890\",\n        \"tipoParticipante\": 2\n      },\n      {\n        \"id\": 3,\n        \"name\": \"Nome do participante 3\",\n        \"agencia\": \"0003\",\n        \"conta\": \"0001234567890\",\n        \"tipoParticipante\": 2\n      }\n    ]\n  }\n}",
+            "latency": 0,
+            "statusCode": 200,
+            "label": "Listagem de Participantes",
+            "headers": [
+                { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+                { "key": "Access-Control-Allow-Credentials", "value": "true" },
+                { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+                { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
+            ],
+            "filePath": "",
+            "sendFileAsBody": false,
+            "disableTemplating": false,
+            "default": true
+          }
+        ],
+        "enabled": true,
+        "responseMode": "DEFAULT",
+        "type": "http",
+        "middlewares": []
+    },
+    {
+        "uuid": "20220467-9ca2-41e7-94cf-bfb6a552065f",
+        "documentation": "Listagem de Participantes Personalizados",
+        "method": "get",
+        "endpoint": "eon/participantes/personalizado",
+        "responses": [
+          {
+            "uuid": "b2ecba03-a06a-4d97-873e-acc17d412657",
+            "body": "{\n  \"participantes\": {\n    \"pageNumber\": 1,\n    \"pageSize\": 10,\n    \"totalPages\": 10,\n    \"totalRecords\": 100,\n    \"data\": [\n      {\n        \"id\": 1,\n        \"name\": \"Nome do participante\",\n        \"agencia\": \"0001\",\n        \"conta\": \"0001234567890\",\n        \"tipoParticipante\": 1\n      },\n      {\n        \"id\": 2,\n        \"name\": \"Nome do participante 2\",\n        \"agencia\": \"0002\",\n        \"conta\": \"0001234567890\",\n        \"tipoParticipante\": 2\n      },\n      {\n        \"id\": 3,\n        \"name\": \"Nome do participante 3\",\n        \"agencia\": \"0003\",\n        \"conta\": \"0001234567890\",\n        \"tipoParticipante\": 3\n      }\n    ]\n  }\n}",
+            "latency": 0,
+            "statusCode": 200,
+            "label": "Listagem de Participantes",
+            "headers": [
+                { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+                { "key": "Access-Control-Allow-Credentials", "value": "true" },
+                { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+                { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
+            ],
+            "filePath": "",
+            "sendFileAsBody": false,
+            "disableTemplating": false,
+            "default": true
+          }
+        ],
+        "enabled": true,
+        "responseMode": "DEFAULT",
+        "type": "http",
+        "middlewares": []
+    },
+    {
+      "uuid": "3062f7fa-ef87-4c97-bd08-623f945aba08",
+      "documentation": "Criar evento",
+      "method": "post",
+      "endpoint": "eon/eventos",
       "responses": [
         {
-          "uuid": "b2ecba03-a06a-4d97-873e-acc17d412657",
-          "body": "[\n  {\n    \"value\": 1,\n    \"label\": \"Bruno\"\n  },\n  {\n    \"value\": 2,\n    \"label\": \"Nelson\"\n  },\n  {\n    \"value\": 3,\n    \"label\": \"Tezuka\"\n  },\n  {\n    \"value\": 4,\n    \"label\": \"Mooses\"\n  }\n]\n",
+          "uuid": "37bfc6f3-7118-43a0-96c9-d95978d59918",
+          "body": "{\n    \"id\": 1,\n    \"nome\": \"Evento 123\",\n    \"tipo\": 1,\n    \"cooperativaId\": 1,\n    \"data\": \"2026-01-23\",\n    \"horario\": \"23:20\",\n    \"linkEvento\": \"https://linkedin.com\",\n    \"chatPrivadoCooperado\": true,\n    \"infoEvento\": \"<h3>Info evento</h3>\",\n    \"pas\": [\n        1,\n        2,\n        3\n    ]\n}",
           "latency": 0,
           "statusCode": 200,
-          "label": "Listagem de Participantes",
-          "headers": [
+          "label": "Criar evento",
+           "headers": [
               { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
               { "key": "Access-Control-Allow-Credentials", "value": "true" },
               { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
@@ -185,16 +243,47 @@
     },
     {
       "uuid": "3062f7fa-ef87-4c97-bd08-623f945aba08",
-      "documentation": "Criar evento",
+      "documentation": "Criar participantes personalizados",
       "method": "post",
-      "endpoint": "eon/eventos",
+      "body": "{\n  \"eventoId\": 2,\n  \"participantesIds\": [1, 2, 3]\n}",
+      "endpoint": "eon/participantes/personalizado",
       "responses": [
         {
-          "uuid": "37bfc6f3-7118-43a0-96c9-d95978d59918",
-          "body": "{\n    \"id\": 1,\n    \"nome\": \"Evento 123\",\n    \"tipo\": 1,\n    \"cooperativaId\": 1,\n    \"data\": \"2026-01-23\",\n    \"horario\": \"23:20\",\n    \"linkEvento\": \"https://linkedin.com\",\n    \"chatPrivadoCooperado\": true,\n    \"infoEvento\": \"<h3>Info evento</h3>\",\n    \"pas\": [\n        1,\n        2,\n        3\n    ]\n}",
+          "uuid": "37bfc6f3-7118-43a0-96c9-d95978d59920",
+          "body": "{}",
           "latency": 0,
-          "statusCode": 200,
-          "label": "Criar evento",
+          "statusCode": 201,
+          "label": "Criar participantes personalizados",
+           "headers": [
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "disableTemplating": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": "DEFAULT",
+      "type": "http",
+      "middlewares": []
+    },
+    {
+      "uuid": "3062f7fa-ef87-4c97-bd08-623f945aba08",
+      "documentation": "Criar participantes",
+      "method": "post",
+      "body": "{\n  \"eventoId\": 2,\n  \"participantesRemovidosIds\": [1, 2, 3],\n  \"agencia\": \"0001\",\n  \"pas\": \"1001,1002,1003\",\n  \"dataCorte\": \"2026-01-01\",\n  \"tipoParticipantes\": 1\n}",
+      "endpoint": "eon/participantes",
+      "responses": [
+        {
+          "uuid": "37bfc6f3-7118-43a0-96c9-d95978d59920",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 201,
+          "label": "Criar participantes",
            "headers": [
               { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
               { "key": "Access-Control-Allow-Credentials", "value": "true" },

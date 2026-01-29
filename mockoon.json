@@ -13,7 +13,7 @@
       "uuid": "e0d5b4a5-52e1-4727-b4d2-432ecfeccc02",
       "documentation": "Listagem de eventos",
       "method": "get",
-      "endpoint": "eventos",
+      "endpoint": "eon/eventos",
       "responses": [
         {
           "uuid": "40ebe4e3-e2e2-4fbc-ae98-5fd8fc8c97d4",
@@ -42,7 +42,7 @@
       "uuid": "950441be-53c3-47fc-9304-66fc08825e16",
       "documentation": "Listagem de cooperativas (agências)",
       "method": "get",
-      "endpoint": "cooperativas",
+      "endpoint": "eon/cooperativas",
       "responses": [
         {
           "uuid": "e12fe10c-28f7-4cbd-98ad-b7c3eb047298",
@@ -71,7 +71,7 @@
       "uuid": "e181c24b-ca21-4bc2-9bf7-c74672dd5f13",
       "documentation": "Listagem de tipos de Eventos",
       "method": "get",
-      "endpoint": "tipos-eventos",
+      "endpoint": "eon/tipos-eventos",
       "responses": [
         {
           "uuid": "af58fdd2-5bda-4192-bcb3-be5c39061306",
@@ -100,7 +100,7 @@
       "uuid": "aec761bf-b5b7-4910-9254-47bd6e40419d",
       "documentation": "Listagem de Status do Evento",
       "method": "get",
-      "endpoint": "status",
+      "endpoint": "eon/status",
       "responses": [
         {
           "uuid": "b561db82-0df5-4eea-9b7a-a54f6b937f41",
@@ -129,7 +129,7 @@
       "uuid": "4e422720-67c3-48d5-aec7-68775efbe29b",
       "documentation": "Listagem de PA's",
       "method": "get",
-      "endpoint": "pas",
+      "endpoint": "eon/pas",
       "responses": [
         {
           "uuid": "99305f76-6b9d-4b89-9a59-fedf120950ad",
@@ -158,7 +158,7 @@
       "uuid": "20220467-9ca2-41e7-94cf-bfb6a552065f",
       "documentation": "Listagem de Participantes",
       "method": "get",
-      "endpoint": "participantes",
+      "endpoint": "eon/participantes",
       "responses": [
         {
           "uuid": "b2ecba03-a06a-4d97-873e-acc17d412657",
@@ -187,7 +187,7 @@
       "uuid": "3062f7fa-ef87-4c97-bd08-623f945aba08",
       "documentation": "Criar evento",
       "method": "post",
-      "endpoint": "eventos",
+      "endpoint": "eon/eventos",
       "responses": [
         {
           "uuid": "37bfc6f3-7118-43a0-96c9-d95978d59918",
@@ -216,7 +216,7 @@
       "uuid": "9c2e6e3e-ed64-4132-b016-b9765ffea268",
       "documentation": "Buscar evento por ID",
       "method": "get",
-      "endpoint": "eventos/1/detalhes",
+      "endpoint": "eon/eventos/1/detalhes",
       "responses": [
         {
           "uuid": "77d9bbfe-84eb-44d8-989b-ba7beca7f6e9",
@@ -245,7 +245,7 @@
       "uuid": "676a1142-53f2-4abe-8579-58d18411b007",
       "documentation": "Retorna URL da transmissão",
       "method": "get",
-      "endpoint": "live",
+      "endpoint": "eon/live",
       "responses": [
         {
           "uuid": "93546434-922a-4e76-8216-d6b1bf981b14",
@@ -274,7 +274,7 @@
       "uuid": "f605b18e-0faa-4eb1-a261-1cf9185259ea",
       "documentation": "Listagem de pergunta por Evento",
       "method": "get",
-      "endpoint": "perguntas",
+      "endpoint": "eon/perguntas",
       "responses": [
         {
           "uuid": "a985bca1-191f-403e-bd28-e79ebb6cface",
@@ -303,7 +303,7 @@
       "uuid": "d2014376-f38e-4cdd-a8d7-4f4f45a6d138",
       "documentation": "Listagem de Resultados de Evento",
       "method": "get",
-      "endpoint": "relatorios/eventos/resultados",
+      "endpoint": "eon/relatorios/eventos/resultados",
       "responses": [
         {
           "uuid": "a8f7ac5d-95f9-4e71-8a39-a62d8237ecb0",
@@ -332,7 +332,7 @@
       "uuid": "772edaa3-c897-4c39-ac64-b4a10212758a",
       "documentation": "Edição de perguntas",
       "method": "put",
-      "endpoint": "perguntas/1",
+      "endpoint": "eon/perguntas/1",
       "responses": [
         {
           "uuid": "dc4a1efa-cc80-454a-a243-a7faef3c3640",
@@ -361,7 +361,7 @@
       "uuid": "686eb9a5-10fa-49d6-88d2-d0c2966c808e",
       "documentation": "Encerrar pergunta",
       "method": "post",
-      "endpoint": "perguntas/:id/encerrar",
+      "endpoint": "eon/perguntas/:id/encerrar",
       "responses": [
         {
           "uuid": "25bbe48b-4ba0-4d73-8221-90419dab4157",
@@ -390,7 +390,7 @@
       "uuid": "8e1cbc95-b45f-48c8-b516-2eede6d9b0d8",
       "documentation": "Criar nova pergunta",
       "method": "post",
-      "endpoint": "perguntas",
+      "endpoint": "eon/perguntas",
       "responses": [
         {
           "uuid": "ee04c579-e006-41fe-8742-fe3cef459edd",
@@ -419,7 +419,7 @@
       "uuid": "bc3d5b9b-0977-4aba-91e6-48aee76f3b78",
       "documentation": "Busca de respostas por evento",
       "method": "get",
-      "endpoint": "relatorio/resposta/:idEvento",
+      "endpoint": "eon/relatorio/resposta/:idEvento",
       "responses": [
         {
           "uuid": "21c3cf41-a918-424a-ad84-71ab856582bb",
@@ -448,7 +448,7 @@
       "uuid": "7a35e5e0-15f9-435e-8398-3e211e0d17d5",
       "documentation": "Lista de participantes com resultados de votos",
       "method": "get",
-      "endpoint": "relatorio/evento/:idEvento/pergunta/:idPergunta",
+      "endpoint": "eon/relatorio/evento/:idEvento/pergunta/:idPergunta",
       "responses": [
         {
           "uuid": "9c275cf3-b5f6-4ffd-a9e7-c090f842d12f",
@@ -457,6 +457,35 @@
           "statusCode": 200,
           "label": "Lista de participantes com resultados de votos",
                     "headers": [
+              { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },
+              { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Requested-With" }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "disableTemplating": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": "DEFAULT",
+      "type": "http",
+      "middlewares": []
+    },
+    {
+      "uuid": "7a35e5e0-15f9-435e-8398-3e211e0d17f4",
+      "documentation": "Lista de perguntas por evento",
+      "method": "get",
+      "endpoint": "/eon/relatorios/evento/mensagem",
+      "responses": [
+        {
+          "uuid": "9c275cf3-b5f6-4ffd-a9e7-c090f842d12f",
+          "body": "{\n  \"pageNumber\": 1,\n  \"pageSize\": 30,\n  \"totalPages\": 10,\n  \"totalRecords\": 11,\n  \"data\": [\n    {\n      \"idUsuario\": 1,\n      \"agencia\": \"0005\",\n      \"pa\": 12,\n      \"conta\": \"0302175-0\",\n      \"nome\": \"GABRIEL FREITAS COELHO\",\n      \"enviadoEm\": \"2025-10-25T15:00:00Z\",\n      \"mensagem\": \"Isso mostra que os investimentos em tecnologia estão dando retorno!\"\n    },\n    {\n      \"idUsuario\": 2,\n      \"agencia\": \"0005\",\n      \"pa\": 12,\n      \"conta\": \"0302175-0\",\n      \"nome\": \"SABRINA ALMADA DA COSTA\",\n      \"enviadoEm\": \"2025-10-25T15:00:00Z\",\n      \"mensagem\": \"Excelente apresentação! Fiquei com uma dúvida: qual a projeção de crescimento da nossa carteira de crédito rural para o próximo ciclo?\"\n    },\n    {\n      \"idUsuario\": 3,\n      \"agencia\": \"0005\",\n      \"pa\": 12,\n      \"conta\": \"0302175-0\",\n      \"nome\": \"CrediSIS - Por: THIAGO Januário\",\n      \"enviadoEm\": \"2025-10-26T15:00:00Z\",\n      \"mensagem\": \"Lembrem-se: todas as propostas e dúvidas devem ser enviadas exclusivamente pelo formulário de perguntas. Agradecemos a compreensão!\"\n    },\n    {\n      \"idUsuario\": 4,\n      \"agencia\": \"0005\",\n      \"pa\": 12,\n      \"conta\": \"0302175-0\",\n      \"nome\": \"CrediSIS - Por: THIAGO Januário\",\n      \"enviadoEm\": \"2025-10-26T15:00:00Z\",\n      \"mensagem\": \"Lembrem-se: todas as propostas e dúvidas devem ser enviadas exclusivamente pelo formulário de perguntas. Agradecemos a compreensão!\"\n    },\n    {\n      \"idUsuario\": 5,\n      \"agencia\": \"0005\",\n      \"pa\": 12,\n      \"conta\": \"0302175-0\",\n      \"nome\": \"CrediSIS - Por: THIAGO Januário\",\n      \"enviadoEm\": \"2025-10-26T15:00:00Z\",\n      \"mensagem\": \"Lembrem-se: todas as propostas e dúvidas devem ser enviadas exclusivamente pelo formulário de perguntas. Agradecemos a compreensão!\"\n    },\n    {\n      \"idUsuario\": 6,\n      \"agencia\": \"0005\",\n      \"pa\": 12,\n      \"conta\": \"0302175-0\",\n      \"nome\": \"CrediSIS - Por: THIAGO Januário\",\n      \"enviadoEm\": \"2025-10-26T15:00:00Z\",\n      \"mensagem\": \"Lembrem-se: todas as propostas e dúvidas devem ser enviadas exclusivamente pelo formulário de perguntas. Agradecemos a compreensão!\"\n    },\n    {\n      \"idUsuario\": 7,\n      \"agencia\": \"0005\",\n      \"pa\": 12,\n      \"conta\": \"0302175-0\",\n      \"nome\": \"CrediSIS - Por: THIAGO Januário\",\n      \"enviadoEm\": \"2025-10-26T15:00:00Z\",\n      \"mensagem\": \"Lembrem-se: todas as propostas e dúvidas devem ser enviadas exclusivamente pelo formulário de perguntas. Agradecemos a compreensão!\"\n    },\n    {\n      \"idUsuario\": 8,\n      \"agencia\": \"0005\",\n      \"pa\": 12,\n      \"conta\": \"0302175-0\",\n      \"nome\": \"CrediSIS - Por: THIAGO Januário\",\n      \"enviadoEm\": \"2025-10-26T15:00:00Z\",\n      \"mensagem\": \"Lembrem-se: todas as propostas e dúvidas devem ser enviadas exclusivamente pelo formulário de perguntas. Agradecemos a compreensão!\"\n    },\n    {\n      \"idUsuario\": 9,\n      \"agencia\": \"0005\",\n      \"pa\": 12,\n      \"conta\": \"0302175-0\",\n      \"nome\": \"CrediSIS - Por: THIAGO Januário\",\n      \"enviadoEm\": \"2025-10-26T15:00:00Z\",\n      \"mensagem\": \"Lembrem-se: todas as propostas e dúvidas devem ser enviadas exclusivamente pelo formulário de perguntas. Agradecemos a compreensão!\"\n    },\n    {\n      \"idUsuario\": 10,\n      \"agencia\": \"0005\",\n      \"pa\": 12,\n      \"conta\": \"0302175-0\",\n      \"nome\": \"CrediSIS - Por: THIAGO Januário\",\n      \"enviadoEm\": \"2025-10-26T15:00:00Z\",\n      \"mensagem\": \"Lembrem-se: todas as propostas e dúvidas devem ser enviadas exclusivamente pelo formulário de perguntas. Agradecemos a compreensão!\"\n    },\n    {\n      \"idUsuario\": 11,\n      \"agencia\": \"0005\",\n      \"pa\": 12,\n      \"conta\": \"0302175-0\",\n      \"nome\": \"CrediSIS - Por: THIAGO Januário\",\n      \"enviadoEm\": \"2025-10-26T15:00:00Z\",\n      \"mensagem\": \"Lembrem-se: todas as propostas e dúvidas devem ser enviadas exclusivamente pelo formulário de perguntas. Agradecemos a compreensão!\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Lista de participantes com resultados de votos",
+          "headers": [
               { "key": "Access-Control-Allow-Origin", "value": "http://localhost:4200" },
               { "key": "Access-Control-Allow-Credentials", "value": "true" },
               { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS" },

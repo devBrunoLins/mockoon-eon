@@ -155,7 +155,7 @@
       "middlewares": []
     },
     {
-        "uuid": "20220467-9ca2-41e7-94cf-bfb6a552065f",
+        "uuid": "20220467-9ca2-41e7-94cf-bfb6a552065g",
         "documentation": "Listagem de Participantes",
         "method": "get",
         "endpoint": "eon/participantes",

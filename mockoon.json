@@ -419,7 +419,7 @@
       "uuid": "bc3d5b9b-0977-4aba-91e6-48aee76f3b78",
       "documentation": "Busca de respostas por evento",
       "method": "get",
-      "endpoint": "eon/relatorio/resposta/:idEvento",
+      "endpoint": "eon/relatorio/resposta",
       "responses": [
         {
           "uuid": "21c3cf41-a918-424a-ad84-71ab856582bb",

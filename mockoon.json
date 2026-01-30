@@ -309,7 +309,7 @@
       "responses": [
         {
           "uuid": "77d9bbfe-84eb-44d8-989b-ba7beca7f6e9",
-          "body": "{\n  \"evento\": {\n    \"id\": 0,\n    \"nome\": \"Nome do evento\",\n    \"tipo\": 2,\n    \"data\": \"2026-01-23\",\n    \"horario\": \"23:20\",\n    \"status\": 1,\n    \"linkEvento\": \"https://www.youtube.com/watch?v=9W9QvS4mNJk\",\n    \"chatPrivadoCooperado\": true,\n    \"infoEvento\": \"<h3>Informações do evento</h3>\",\n    \"cooperativaId\": 0,\n    \"cooperativaSigla\": \"Jicred\",\n    \"cooperativaCodigo\": \"0002\",\n    \"pas\": [\n      {\n        \"id\": 2,\n        \"sigla\": \"Jicred\",\n        \"codigo\": \"0002\"\n      }\n    ]\n  }\n}",
+          "body": "{\n  \"evento\": {\n    \"id\": 0,\n    \"nome\": \"Nome do evento\",\n    \"tipo\": 2,\n    \"data\": \"2026-01-23\",\n    \"horario\": \"23:20\",\n    \"status\": 1,\n    \"linkEvento\": \"https://www.youtube.com/watch?v=9W9QvS4mNJk\",\n    \"chatPrivadoCooperado\": true,\n    \"infoEvento\": \"<h3>Informações do evento</h3>\",\n    \"cooperativaId\": 1,\n    \"cooperativaSigla\": \"Jicred\",\n    \"cooperativaCodigo\": \"0002\",\n    \"pas\": [\n      {\n        \"id\": 2,\n        \"sigla\": \"Jicred\",\n        \"codigo\": \"0002\"\n      }\n    ]\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Buscar evento por ID",
